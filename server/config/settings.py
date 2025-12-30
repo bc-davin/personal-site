@@ -13,9 +13,10 @@ class Settings:
     EXPERIENCES_COLLECTION: str = "experiences"
     
     # CORS
-    ALLOWED_ORIGINS: list = [
+    ALLOWED_ORIGINS: list = os.getenv("ALLOWED_ORIGINS", "").split(",") if os.getenv("ALLOWED_ORIGINS") else [
         "http://localhost:4200",  # Angular dev server
         "http://localhost:3000",
+        "https://*.vercel.app",  # Vercel preview deployments
     ]
 
 settings = Settings()
