@@ -26,6 +26,7 @@ export class ExperienceComponent implements OnInit {
 
     this.experienceService.getAll().subscribe({
       next: (experiences) => {
+        console.log('Experience data from backend:', JSON.stringify(experiences, null, 2));
         this.experiences.set(experiences);
         this.loading.set(false);
       },
