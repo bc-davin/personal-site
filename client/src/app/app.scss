@@ -5,8 +5,8 @@ main {
 .footer {
   background-color: #f5f5f5;
   border-top: 1px solid #e0e0e0;
-  padding: 2rem 0;
-  margin-top: 4rem;
+  padding: 0.75rem 0;
+  margin-top: 1rem;
 
   &-content {
     max-width: 1200px;
@@ -14,6 +14,6 @@ main {
     padding: 0 1rem;
     text-align: center;
     color: #666;
-    font-size: 0.9375rem;
+    font-size: 0.875rem;
   }
 }
