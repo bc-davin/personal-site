@@ -17,14 +17,25 @@
 }
 
 .nav-brand {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #0066cc;
   text-decoration: none;
-  transition: color 0.2s;
+  transition: all 0.2s ease;
 
   &:hover {
-    color: #0052a3;
+    .logo svg {
+      color: #0052a3;
+    }
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    svg {
+      color: #0066cc;
+      transform: rotate(-45deg);
+      transition: color 0.2s ease;
+    }
   }
 }
 
