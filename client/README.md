@@ -85,7 +85,7 @@ npm install -g angular-cli-ghpages
 
 2. Build for production with base href:
 ```bash
-npm run build -- --base-href /personal-web/
+npm run build -- --base-href /personal-site/
 ```
 
 3. Deploy to GitHub Pages:
